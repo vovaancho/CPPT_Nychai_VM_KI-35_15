@@ -1,9 +1,7 @@
-j	j	j	j	j	j	j	j	j	
-j	j	j	j	j	j	j	j	
-j	j	j	j	j	j	j	
-j	j	j	j	j	j	
-j	j	j	j	j	
-j	j	j	j	
-j	j	j	
-j	j	
-j	
+f	f	f	f	f	f	f	
+f	f	f	f	f	f	
+f	f	f	f	f	
+f	f	f	f	
+f	f	f	
+f	f	
+f	
