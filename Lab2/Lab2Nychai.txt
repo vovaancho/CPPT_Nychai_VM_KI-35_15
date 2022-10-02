@@ -1,7 +1,5 @@
-f	f	f	f	f	f	f	
-f	f	f	f	f	f	
-f	f	f	f	f	
-f	f	f	f	
-f	f	f	
-f	f	
-f	
+d	d	d	d	d	
+	d	d	d	d	
+		d	d	d	
+			d	d	
+				d	

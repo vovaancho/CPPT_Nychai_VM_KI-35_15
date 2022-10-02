@@ -1,6 +1,6 @@
- import java.util.*;
-        import  java.lang.String;
-        import java.io.*;
+import java.util.*;
+import  java.lang.String;
+import java.io.*;
 
 
 /* Клас Lab2 реалізує приклад програми до лабораторної роботи №2
@@ -39,18 +39,23 @@ public class Lab2 {
         }
         arrayOfMatrix = new String[sizeOfMatrix][];
         for (int i = 0; i < arrayOfMatrix.length; i++) {
-           int temp=sizeOfMatrix-i;
+            int temp=sizeOfMatrix-i;
             arrayOfMatrix[i] = new String[temp];
             for (int j = 0; j < temp; j++) {
                 arrayOfMatrix[i][j] = filler;
+
                 if (i == 0) {
-                    System.out.print(arrayOfMatrix[i][j]+"\t");
+                    System.out.print(arrayOfMatrix[i][j] +"\t");
                     fout.print(arrayOfMatrix[i][j] + "\t");
                 } else {
-                    if (i >= 1 && j >= i) {
+                    if (i >= 1 && j >= 1) {
                         System.out.print(arrayOfMatrix[i][j]+"\t");
                         fout.print(arrayOfMatrix[i][j] + "\t");
                     } else {
+                        for (int index =0; index<arrayOfMatrix.length-temp;index++){
+                            System.out.print("\t");
+                            fout.print("\t");
+                        }
                         System.out.print(arrayOfMatrix[i][j]+"\t");
                         fout.print(arrayOfMatrix[i][j] + "\t");
                     }
