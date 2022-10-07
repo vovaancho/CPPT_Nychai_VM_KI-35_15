@@ -7,7 +7,7 @@ public class Equation {
 
         try {
             double ctg = 1/Math.tan(rad);
-            y = Math.tan(rad)* (2*ctg);
+            y = Math.tan(rad)* (((ctg-Math.tan(rad)))/2);
             if (y==Double.NaN || y==Double.NEGATIVE_INFINITY ||
                     y==Double.POSITIVE_INFINITY || x==90 || x== -90) {
                 throw new ArithmeticException();
