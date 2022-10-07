@@ -40,7 +40,7 @@ public class CalcWFio {
     public void calculate(double x) {
        double rad = x * Math.PI / 180.0;
         double ctg = 1/Math.tan(rad);
-        result = Math.tan(rad)* (2*ctg);
+        result = Math.tan(rad)* (((ctg-Math.tan(rad)))/2);
     }
 
     public double getResult() {
