@@ -1,28 +1,64 @@
 package Nychai.Lab7;
+/**
+ * Class <code>Coal</code> class describes work and actions with coal
+ * @author  Nychai Volodymyr KI-35
+ * @version 1.0
+ */
 
 public class Coal implements Data{
     private int price;
-    private double weight;
+    private int weight;
     private String placeOfMining;
 
-    Coal(int price,double weight, String placeOfMining){
+    /**
+     * @param price price of coal
+     * @param weight weight of coal
+     * @param placeOfMining place of mining
+     */
+    Coal(int price,int weight, String placeOfMining){
         this.price=price;
         this.weight=weight;
         this.placeOfMining=placeOfMining;
     }
 
-    public double getWeight() {return weight;}
-    public void setWeight(double weight) {this.weight = weight;}
+    /**
+     * @return weight
+     */
+    public int getWeight() {return weight;}
 
+    /**
+     * method sets weight
+     * @param weight
+     */
+    public void setWeight(int weight) {this.weight = weight;}
+
+    /**
+     * @return place
+     */
     public String getPlaceOfMining() {return placeOfMining;}
+
+    /**
+     * method sets place of mining
+     * @param placeOfMining
+     */
     public void setPlaceOfMining(String placeOfMining) {this.placeOfMining = placeOfMining;}
 
+    /**
+     * @return price
+     */
     public int getPrice() {return price;}
+    /**
+     * method doing some operation with weight
+     * @param p is data
+     * @return
+     */
     public int compareTo(Data p) {
-        Integer s = price;
-        return s.compareTo(p.getPrice());
+        Integer s = weight;
+        return s.compareTo(p.getWeight());
     }
-
+    /**
+     * method print info
+     */
     public void print(){
         System.out.println("Weight is " + weight + "\tPrice is " + price + "\tPlace of mining "+ placeOfMining);
     }

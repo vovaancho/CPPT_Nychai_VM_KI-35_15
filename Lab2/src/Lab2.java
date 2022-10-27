@@ -45,8 +45,14 @@ public class Lab2 {
                 arrayOfMatrix[i][j] = filler;
 
                 if (i == 0) {
-                    System.out.print(arrayOfMatrix[i][j] +"\t");
-                    fout.print(arrayOfMatrix[i][j] + "\t");
+                    if(i==0 && j==0){
+                        arrayOfMatrix[i][j]=filler;
+                        System.out.print(arrayOfMatrix[i][j] +"\t");
+                    }
+                    else {
+                        System.out.print(arrayOfMatrix[i][j] + "\t");
+                        fout.print(arrayOfMatrix[i][j] + "\t");
+                    }
                 } else {
                     if (i >= 1 && j >= 1) {
                         System.out.print(arrayOfMatrix[i][j]+"\t");
@@ -56,6 +62,7 @@ public class Lab2 {
                             System.out.print("\t");
                             fout.print("\t");
                         }
+                        arrayOfMatrix[i][j]=filler;
                         System.out.print(arrayOfMatrix[i][j]+"\t");
                         fout.print(arrayOfMatrix[i][j] + "\t");
                     }

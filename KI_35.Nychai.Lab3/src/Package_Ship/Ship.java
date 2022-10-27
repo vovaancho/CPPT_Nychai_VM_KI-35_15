@@ -26,7 +26,6 @@ private PrintWriter fout;
 
         fout = new PrintWriter(new File("Result.txt"));
     }
-
     public void setShipCount(int count){
         people.setCount(count);
         System.out.println("Now there are "+ people.getCount() + "people on the ship");

@@ -16,7 +16,10 @@ public class Engine {
         this.power=100000;
         this.volume=500;
     }
-
+    /**
+     * Another Constructor
+     * @param power -- power of ship
+     */
    public Engine(int power, int volume){
        this.power=power;
        this.volume=volume;
@@ -28,6 +31,10 @@ public class Engine {
     public int getVolume(){
        return  this.volume;
     }
+    /**
+     * method reduse power
+     * @param value
+     */
     public void redusePower(int value){
      if (value>=this.power)
      {
@@ -36,7 +43,9 @@ public class Engine {
      this.power-=value;
      showEngine();
     }
-
+    /**
+     * method increase power
+     */
     public void increasePower(int value){
         if (value<=0)
         {

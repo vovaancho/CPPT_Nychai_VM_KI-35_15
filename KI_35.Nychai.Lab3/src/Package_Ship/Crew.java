@@ -12,7 +12,9 @@ public class Crew {
     Crew(int count){
         this.count=count;
     }
-
+    /**
+     *  method print info about move
+     */
     public void startMoving(){
         if (count>50){
             System.out.println("Ship is going");

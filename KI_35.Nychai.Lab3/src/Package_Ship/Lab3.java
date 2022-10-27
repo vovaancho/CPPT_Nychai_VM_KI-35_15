@@ -5,9 +5,9 @@ import java.io.FileNotFoundException;
 public class Lab3 {
     public static void main(String []args) throws FileNotFoundException {
 
+        Ship ship2 = new Ship(100,100,100,100,4);
 
-        Ship ship2 = new Ship(520,10,7,6,2);
-        ship2.shipStartMoving();
+       ship2.shipStartMoving();
         ship2.setShipCount(30);
         ship2.increaseCountOfPeople(20);
         ship2.shipStartMoving();
@@ -27,5 +27,9 @@ public class Lab3 {
         ship2.redusePowerOfShip(70);
 
         ship2.AllInfo();
-    }
+
+
+        }
+
+
 }

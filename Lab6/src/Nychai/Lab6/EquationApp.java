@@ -3,8 +3,16 @@ package Nychai.Lab6;
 import java.util.Scanner;
 import java.io.*;
 import static java.lang.System.out;
+/**
+ * Class <code>EquationsApp</code> test class
+ * @author  Nychai Volodymyr KI-35
+ * @version 1.0
+ */
 
 public class EquationApp {
+    /**
+     * @param args
+     */
     public static void main(String []args) throws IOException {
    CalcWFio obj1 = new CalcWFio();
    Scanner s = new Scanner(System.in);

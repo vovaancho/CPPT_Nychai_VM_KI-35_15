@@ -3,14 +3,21 @@ import java.io.*;
 import java.util.PrimitiveIterator;
 
 /**
- * Constructor
+ * Abstract class Ship implements cat
+ *  @author Nychai Volodymyr KI-35
+ *  @version 1.0
  */
+
 public abstract class Ship  {
     protected Engine engine1;
     protected Location loc1;
     protected Crew people;
     protected PrintWriter fout;
 
+    /**
+     * Constructor
+     * @throws FileNotFoundException
+     */
     Ship()throws FileNotFoundException{
         engine1 = new Engine();
         loc1 = new Location();
@@ -18,7 +25,15 @@ public abstract class Ship  {
 
         fout = new PrintWriter(new File("Result.txt"));
     }
-
+    /**
+     * Constructor
+     * @throws FileNotFoundException
+     * @param<code>valuePower</code> power of the engine
+     * @param<code>valueVolume</code> volume of the engine
+     * @param<code>xLoc</code> X location
+     * @param<code>yLoc</code> Y location
+     * @param<code>count</code> count of the crew
+     */
     Ship(int valuePower,int valueVolume,int xLoc, int yLoc,int valueCount)throws FileNotFoundException{
         engine1 = new Engine(valuePower,valueVolume);
         loc1 = new Location(xLoc,yLoc);
@@ -26,12 +41,20 @@ public abstract class Ship  {
 
         fout = new PrintWriter(new File("Result.txt"));
     }
+    /**
+     * Method sets count of ship
+     * @param count
+     */
     public void setShipCount(int count){
         people.setCount(count);
         System.out.println("Now there are "+ people.getCount() + "people on the ship");
         fout.print("You change count of crew\n");
         fout.flush();
     }
+
+    /**
+     * method check count of crew and print info about move
+     */
     public void shipStartMoving(){
         if (people.getCount()>50){
             System.out.println("Ship is going");
@@ -44,15 +67,27 @@ public abstract class Ship  {
             fout.flush();
         }
     }
+    /**
+     * Method returns count of crew
+     * @return count
+     */
     public int getCountOfPeople(){
         return people.getCount();
     }
+    /**
+     * method increase count of crew
+     *  @param value
+     */
     public void increaseCountOfPeople(int value){
         people.increaseCount(value);
         System.out.println("Now there are "+ people.getCount() + "people on the ship");
         fout.print("You change count of crew\n");
         fout.flush();
     }
+    /**
+     * method reduse count of crew
+     *  @param value
+     */
     public void reduseCountOfPeople(int value){
         people.reduseCount(value);
         System.out.println("Now there are "+ people.getCount() + "people on the ship");

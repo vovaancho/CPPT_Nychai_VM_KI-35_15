@@ -1,5 +1,10 @@
 package Nychai.Lab5;
-
+/**
+ * Class <code>Equation</code> check exception and calc
+ * @throws CalcException
+ * @author  Nychai Volodymyr KI-35
+ * @version 1.0
+ */
 public class Equation {
     public double Calc (int x) throws CalcException{
         double y, rad;

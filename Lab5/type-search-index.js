@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"Nychai.Lab5","l":"CalcException"},{"p":"Nychai.Lab5","l":"Equation"},{"p":"Nychai.Lab5","l":"EquationsApp"}];updateSearchResults();

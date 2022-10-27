@@ -3,5 +3,5 @@ You change count of crew
 You change count of crew
 Ship is going
 You change count of crew
-You don't start moving
+Ship is going
 You look info
